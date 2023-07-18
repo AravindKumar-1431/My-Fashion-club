@@ -1,0 +1,134 @@
+.navbox {
+  display: flex;
+  border: 2px solid balck;
+  box-shadow: 0px 4px 50px 0px gray;
+  border-radius: 10px;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  position: fixed;
+  font-size: 10px;
+  z-index: 100;
+}
+
+.navlistinp {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputf {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: 50%;
+  width: 40%;
+  padding: 6px;
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.inputf input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  align-items: center;
+  width: 70%;
+}
+
+.search-icon {
+  color: gray;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.navlist2 {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  position: absolute;
+  transform: translate(50%, -50%);
+  left: 50%;
+}
+.navlist2 li {
+  display: flex;
+  padding: 1rem;
+}
+.loginbtn {
+  width: 70px;
+  height: 35px;
+  background: lightgray;
+}
+
+.hearti:hover {
+  color: red;
+  outline: none;
+  border: none;
+}
+.logbtn:hover {
+  cursor: pointer;
+}
+.ham {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 0%;
+  display: none;
+}
+.close {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 0%;
+  display: none;
+}
+/* @media screen and (min-width: 900px) {
+  .ham {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 580px) {
+  .navlist2 {
+    flex-direction: column;
+    transform: translate(-50%, 50%);
+    left: 85%;
+    top: 50%;
+    border: 0px solid gray;
+    box-shadow: 0px 0px 5px 0px;
+    padding: 0%;
+    width: 25%;
+    height: 250px;
+    font-size: 25px;
+    transition: 0.5s;
+    background-color: bisque;
+  }
+
+  .navlist2.active {
+    /* left: -85%; */
+    top: -500%;
+  }
+
+  .ham {
+    padding: 0.5rem;
+    display: initial;
+    font-size: 30px;
+  }
+
+  .close {
+    display: inline;
+  }
+  .loginbtn {
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+  }
+}
