@@ -8,9 +8,11 @@ const Homepage = () => {
   return (
     <div>
       <div className="Homecontainer">
-        <div className="home">
-          <img className="homimg" src={hom1} alt="img1" />
-        </div>
+        <Link to="/product">
+          <div className="home">
+            <img className="homimg" src={hom1} alt="img1" />
+          </div>
+        </Link>
 
         <div className="cards-container">
           <Link to="/product">

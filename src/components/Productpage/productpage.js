@@ -77,7 +77,14 @@ const productpage = () => {
 
           <div className="sidebar-content">
             <div className="pricerange">
-              <h5>Price</h5>
+              <label for="customRange1" class="form-label">
+                <h5>Price</h5>
+                <input
+                  type="range"
+                  class="form-range"
+                  id="customRange1"
+                ></input>
+              </label>
             </div>
             <div className="category">
               <h5>Category</h5>
@@ -92,17 +99,35 @@ const productpage = () => {
             <div className="rating">
               <h5>Rating</h5>
               <div className="ritems">
-                <i class="bi bi-record-circle-fill"> 4stars</i>
-                <i class="bi bi-record-circle-fill"> 3stars</i>
-                <i class="bi bi-record-circle-fill"> 2stars</i>
-                <i class="bi bi-record-circle-fill"> 1stars</i>
+                <li>
+                  <input type="radio" />
+                  4stars
+                </li>
+                <li>
+                  <input type="radio" />
+                  3stars
+                </li>
+                <li>
+                  <input type="radio" />
+                  2stars
+                </li>
+                <li>
+                  <input type="radio" />
+                  1star
+                </li>
               </div>
             </div>
             <div className="sorting">
               <h5>Sorting</h5>
               <div className="sitems">
-                <i class="bi bi-record-circle-fill"> Price-low to high</i>
-                <i class="bi bi-record-circle-fill"> Price-high to low</i>
+                <li>
+                  <input type="radio" />
+                  Price-low to high
+                </li>
+                <li>
+                  <input type="radio" />
+                  Price-high to low
+                </li>
               </div>
             </div>
           </div>
@@ -113,8 +138,7 @@ const productpage = () => {
           <div className="productitems">
             {products.map((product) => (
               <div className="pcard1" key={product.id}>
-                <div className="productimgbox">
-                  {" "}
+                <div className="productimg">
                   <img src={product.image} alt="pimg" />
                 </div>
                 <p>{product.name}</p>
