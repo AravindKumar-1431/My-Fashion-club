@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  // const location = useLocation();
-
   const [click, setclick] = useState(false);
   const handelclick = () => setclick(!click);
 
@@ -24,6 +22,9 @@ const Navbar = () => {
         <ul className={click ? "navlist2 " : " navlist2  active"}>
           <Link to="/">
             <li>Home</li>
+          </Link>
+          <Link to="/product">
+            <li>Products</li>
           </Link>
           <li>
             <button className="loginbtn">

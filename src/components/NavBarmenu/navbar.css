@@ -9,8 +9,9 @@
   flex-direction: row;
   padding: 1rem;
   position: fixed;
-  font-size: 10px;
-  z-index: 100;
+  font-size: 20px;
+  z-index: 10;
+  background: white;
 }
 
 .navlistinp {
@@ -25,14 +26,15 @@
 .inputf {
   transform: translate(-50%, -50%);
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 50%;
   right: 50%;
-  width: 40%;
+  width: 30%;
   padding: 6px;
   display: flex;
   background-color: white;
   border-radius: 4px;
+  border: 1px solid;
 }
 
 .inputf input {
@@ -95,24 +97,28 @@
 } */
 
 @media screen and (max-width: 580px) {
+  .navbox {
+    font-size: 7.5px;
+  }
+
   .navlist2 {
     flex-direction: column;
     transform: translate(-50%, 50%);
     left: 85%;
-    top: 50%;
+    top: 0%;
     border: 0px solid gray;
     box-shadow: 0px 0px 5px 0px;
     padding: 0%;
     width: 25%;
-    height: 250px;
-    font-size: 25px;
+    height: 300px;
+    font-size: 20px;
     transition: 0.5s;
-    background-color: bisque;
+    background-color: white;
   }
 
   .navlist2.active {
     /* left: -85%; */
-    top: -500%;
+    top: -600%;
   }
 
   .ham {
@@ -130,5 +136,20 @@
     font-size: 20px;
     outline: none;
     border: none;
+  }
+
+  .inputf {
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    width: 55%;
+    height: 5vh;
+  }
+
+  .search-icon {
+    color: gray;
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 10px;
   }
 }
