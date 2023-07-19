@@ -69,7 +69,44 @@ const productpage = () => {
   return (
     <div className="product-box">
       <div className="product-container">
-        <div className="sidebar"></div>
+        <div className="sidebar">
+          <div className="header">
+            <h5>Filter</h5>
+            <h5>Clear</h5>
+          </div>
+
+          <div className="sidebar-content">
+            <div className="pricerange">
+              <h5>Price</h5>
+            </div>
+            <div className="category">
+              <h5>Category</h5>
+              <div className="inp1">
+                Men
+                <input type="checkbox" />
+                <br />
+                kids
+                <input type="checkbox" />
+              </div>
+            </div>
+            <div className="rating">
+              <h5>Rating</h5>
+              <div className="ritems">
+                <i class="bi bi-record-circle-fill"> 4stars</i>
+                <i class="bi bi-record-circle-fill"> 3stars</i>
+                <i class="bi bi-record-circle-fill"> 2stars</i>
+                <i class="bi bi-record-circle-fill"> 1stars</i>
+              </div>
+            </div>
+            <div className="sorting">
+              <h5>Sorting</h5>
+              <div className="sitems">
+                <i class="bi bi-record-circle-fill"> Price-low to high</i>
+                <i class="bi bi-record-circle-fill"> Price-high to low</i>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="producthead">
           <h3>Showing All Products</h3>
