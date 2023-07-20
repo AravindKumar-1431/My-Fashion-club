@@ -1,12 +1,11 @@
 .cart-cardbox {
-  border: 0px solid black;
+  border: 2px solid black;
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: absolute;
   transform: translate(-50%, -50%);
-
   left: 50%;
   top: 65%;
 }
@@ -14,9 +13,8 @@
   display: flex;
   width: 60%;
   height: 40vh;
-  border: px solid black;
+  border: 2px solid black;
   margin-left: 10rem;
-
   box-shadow: 0px 4px 50px 0px gray;
 }
 .productimg {

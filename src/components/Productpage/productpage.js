@@ -137,14 +137,15 @@ const productpage = () => {
           <h3>Showing All Products</h3>
           <div className="productitems">
             {products.map((product) => (
-              <div className="pcard1" key={product.id}>
+              <div className="productcards" key={product.id}>
                 <div className="productimg">
                   <img src={product.image} alt="pimg" />
                 </div>
-                <p>{product.name}</p>
-                <h1>${product.price}</h1>
-
-                <button className="addcartbtn">Add to Cart</button>
+                <div className="productcontent">
+                  <p>{product.name}</p>
+                  <h1>${product.price}</h1>
+                  <button className="addcartbtn">Add to Cart</button>
+                </div>
               </div>
             ))}
           </div>
