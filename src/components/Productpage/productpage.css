@@ -53,8 +53,9 @@
   width: 100%;
 }
 
-.productcards .productimg img {
-  width: 130%;
+.productimg img {
+  width: 80%;
+  height: 30vh;
   padding: 0.5rem;
   border: 2px solid gray;
 }
@@ -63,7 +64,7 @@
   width: 100%;
   margin: auto;
   position: relative;
-  top: 40%;
+  top: 0%;
   text-align: center;
   padding-right: 2rem;
 }
@@ -171,7 +172,7 @@
     height: 20vh;
     padding: 0.5rem;
     border: 2px solid gray;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .productcards {
@@ -187,14 +188,23 @@
   }
 
   .productcontent {
-    width: 90%;
+    width: 100%;
     font-size: 15px;
-    padding-right: 1rem;
+    margin-left: 0rem;
     top: 0%;
+    justify-content: center;
+  }
+  .productcontent p,
+  h1 {
+    margin-left: 1rem;
   }
 
   .sidebar {
     width: 35%;
-    font-size: 10px;
+    font-size: 16px;
+  }
+
+  .pricerange input {
+    width: 50%;
   }
 }

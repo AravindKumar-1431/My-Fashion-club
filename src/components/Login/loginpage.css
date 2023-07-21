@@ -94,7 +94,7 @@
     top: 40%;
     padding: 2rem;
     width: 90%;
-    height: 45vh;
+    height: 55vh;
     margin-left: 0.1rem;
   }
   .loginitems {
@@ -106,7 +106,7 @@
   }
   .loginitems .inp1,
   .inp2 {
-    width: 90%;
+    width: 95%;
     height: 4vh;
 
     padding: 0.5rem;
@@ -126,12 +126,15 @@
 
   .logitems a {
     font-size: 13px;
-    margin-left: -1rem;
+    margin-left: -0rem;
   }
 
   .logitems2 p {
     font-size: 8.5px;
-    margin-left: -0.5rem;
+    margin-left: -1rem;
+  }
+  .logitems2 a {
+    margin-left: 2rem;
   }
 
   .logitems3 {
@@ -148,14 +151,19 @@
   }
 
   .logitems4 p {
-    margin-left: 1rem;
-    font-size: 15px;
+    margin-left: 0.5rem;
+    font-size: 13px;
   }
   .signbtn {
     background: #3b82f6;
-    width: 50%;
+    width: 70%;
     height: 4vh;
-    margin-left: 2rem;
+    margin-left: 1rem;
     color: white;
+  }
+
+  .logitems4 input {
+    padding: 0.5rem;
+    background: red;
   }
 }

@@ -1,14 +1,10 @@
 import React from "react";
 import "./loginpage.css";
-import Navbar from "../NavBarmenu/Navbar";
 import { Link } from "react-router-dom";
 
 const Loginpage = () => {
   return (
     <div>
-      <div>
-        <Navbar />
-      </div>
       <div className="logbox">
         <h1>Login</h1>
         <div className="loginitems">
@@ -18,7 +14,7 @@ const Loginpage = () => {
           <input className="inp2" type="password" placeholder="**********" />
           <div className="logitems2">
             <p>
-              <input type="checkbox" /> Remember me
+              <input type="checkbox" className="checkbox1" /> Remember me
               <Link to="/">Forgot your Password?</Link>
             </p>
           </div>
