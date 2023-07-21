@@ -141,6 +141,7 @@ const productpage = () => {
               <div className="productcards" key={product.id}>
                 <div className="productimg">
                   <img src={product.image} alt="pimg" />
+                  <i class="bi bi-heart"></i>
                 </div>
                 <div className="productcontent">
                   <p>{product.name}</p>

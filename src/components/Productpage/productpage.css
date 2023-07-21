@@ -60,6 +60,23 @@
   border: 2px solid gray;
 }
 
+.productimg i {
+  position: relative;
+  top: -15rem;
+  left: -0.5rem;
+  font-size: 20px;
+  color: red;
+  mix-blend-mode: darken;
+  background: none;
+  cursor: pointer;
+}
+/* .bi.bi-heart {
+  background-color: red;
+  position: relative;
+  top: -15rem;
+  left: -0.5rem;
+  font-size: 20px;
+} */
 .productcontent {
   width: 100%;
   margin: auto;
