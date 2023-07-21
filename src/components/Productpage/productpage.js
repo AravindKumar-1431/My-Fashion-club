@@ -78,8 +78,8 @@ const productpage = () => {
 
           <div className="sidebar-content">
             <div className="pricerange">
+              <h5>price</h5>
               <label for="customRange1" class="form-label">
-                <h5>Price</h5>
                 <input
                   type="range"
                   class="form-range"

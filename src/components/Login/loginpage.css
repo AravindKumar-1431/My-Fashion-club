@@ -84,11 +84,6 @@
   margin-left: 3rem;
 }
 
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .logbox {
-    top: 30%;
-  }
-} */
 @media screen and (max-width: 580px) {
   .logbox {
     top: 40%;
