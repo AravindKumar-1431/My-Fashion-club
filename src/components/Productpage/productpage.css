@@ -223,4 +223,14 @@
   .pricerange input {
     width: 50%;
   }
+  .productimg i {
+    position: relative;
+    top: -36rem;
+    left: 8.5rem;
+    font-size: 20px;
+    color: red;
+    mix-blend-mode: darken;
+    background: none;
+    cursor: pointer;
+  }
 }

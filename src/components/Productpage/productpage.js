@@ -53,18 +53,6 @@ const productpage = () => {
       price: 100,
       image: p6image,
     },
-    {
-      id: 1,
-      name: "Mens Blue Shirt",
-      price: 100,
-      image: pimage,
-    },
-    {
-      id: 1,
-      name: "Mens Blue Shirt",
-      price: 100,
-      image: pimage,
-    },
   ];
 
   return (
